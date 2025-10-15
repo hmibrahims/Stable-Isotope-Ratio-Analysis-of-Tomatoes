@@ -1,7 +1,7 @@
 #Author Name    :Ibrahim Khalil
 #Project Name   :Isotopic Analysis of Tomatoes
 #Content Name   :Overview of traits (2×2 boxplot grid)
-#Date           :10.10.2025
+#Date           :15.10.2025
 # ------------------------------------------------------------
 
 setwd("C:/Users/User/OneDrive/Desktop/Stable-Isotope-Ratio-Analysis-of-Tomatoes")
@@ -26,7 +26,14 @@ prod_long <- prod %>%
     `C:N (molar)` = CN_molar_mean
   ) %>%
   pivot_longer(cols = c(`δ13C (‰)`,`δ15N (‰)`,`wt%N (%)`,`C:N (molar)`),
-               names_to = "variable", values_to = "value")
+               names_to = "variable", values_to = "value"
+  ) %>%
+  mutate(
+    variable = factor(
+      variable,
+      levels = c("δ13C (‰)", "wt%N (%)", "δ15N (‰)", "C:N (molar)")
+    )
+  )
 
 pal_region <- c("Almeria"="#1b9e77","Bavaria"="#d95f02","Souss-Massa"="#7570b3")
 shape_ft   <- c("Conventional"=17,"Organic"=16)
