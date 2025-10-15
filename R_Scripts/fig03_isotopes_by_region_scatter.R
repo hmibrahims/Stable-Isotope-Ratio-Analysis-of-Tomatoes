@@ -1,7 +1,7 @@
 #Author Name    :Ibrahim Khalil
 #Project Name   :Isotopic Analysis of Tomatoes
 #Content Name   :δ¹⁵N vs δ¹³C scatter by region
-#Date           :10.10.2025
+#Date           :15.10.2025
 # ------------------------------------------------------------
 
 setwd("C:/Users/User/OneDrive/Desktop/Stable-Isotope-Ratio-Analysis-of-Tomatoes")
@@ -27,4 +27,4 @@ p <- ggplot(dat, aes(d13C_permil, d15N_permil, color = region, shape = farming_t
   theme_classic(base_size = 14) +
   theme(legend.position = "right")
 
-ggsave("Figure3_isotopes_by_region_scatter.tiff", p, device = "tiff", dpi = 300, width = 6.6, height = 6.6, units = "in")
+ggsave("figures/Figure3_isotopes_by_region_scatter.tiff", p, device = "tiff", dpi = 300, width = 6.6, height = 6.6, units = "in")

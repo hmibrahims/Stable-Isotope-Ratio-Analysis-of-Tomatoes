@@ -1,7 +1,7 @@
 #Author Name    :Ibrahim Khalil
 #Project Name   :Isotopic Analysis of Tomatoes
 #Content Name   :PCA scores plot (PC1 vs PC2)
-#Date           :10.10.2025
+#Date           :15.10.2025
 # ------------------------------------------------------------
 
 setwd("C:/Users/User/OneDrive/Desktop/Stable-Isotope-Ratio-Analysis-of-Tomatoes")
@@ -43,5 +43,5 @@ p <- ggplot(scores, aes(PC1, PC2, color = region, shape = farming_type)) +
   theme_classic(base_size = 14) +
   theme(legend.position = "right")
 
-ggsave("Figure4_PCA_scores.tiff", p, device = "tiff", dpi = 300, width = 6.6, height = 6.6, units = "in")
+ggsave("figures/Figure4_PCA_scores.tiff", p, device = "tiff", dpi = 300, width = 6.6, height = 6.6, units = "in")
 

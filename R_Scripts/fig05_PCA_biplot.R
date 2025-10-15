@@ -1,7 +1,7 @@
 #Author Name    :Ibrahim Khalil
 #Project Name   :Isotopic Analysis of Tomatoes
 #Content Name   :PCA biplot (scores + loading vectors)
-#Date           :10.10.2025
+#Date           :15.10.2025
 # ------------------------------------------------------------
 
 setwd("C:/Users/User/OneDrive/Desktop/Stable-Isotope-Ratio-Analysis-of-Tomatoes")
@@ -60,4 +60,4 @@ p <- ggplot() +
   theme_classic(base_size = 14) +
   theme(legend.position = "right")
 
-ggsave("Figure5_PCA_biplot.tiff", p, device = "tiff", dpi = 300, width = 13.7, height = 9.7, units = "in")
+ggsave("figures/Figure5_PCA_biplot.tiff", p, device = "tiff", dpi = 300, width = 13.7, height = 9.7, units = "in")
