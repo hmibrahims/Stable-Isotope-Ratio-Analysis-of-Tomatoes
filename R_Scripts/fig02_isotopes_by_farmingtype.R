@@ -26,8 +26,14 @@ p1 <- ggplot(dat, aes(farming_type, d13C_permil)) +
   scale_shape_manual(values = shape_ft, name = "Farming type") +
   labs(x = NULL, y = expression(delta^13*C~("\u2030"))) +
   theme_minimal(base_size = 10) +
-  theme(panel.grid.major.x = element_blank(), panel.grid.minor = element_blank())
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor   = element_blank(),
+    axis.line.x = element_line(color = "black", linewidth = 0.4),
+    axis.line.y = element_line(color = "black", linewidth = 0.4)
+  )
 
+  
 p2 <- ggplot(dat, aes(farming_type, d15N_permil)) +
   geom_boxplot(fill = NA, colour = "black", linewidth = 0.4, width = 0.6, outlier.shape = NA) +
   geom_point(aes(color = region, shape = farming_type),
@@ -36,9 +42,19 @@ p2 <- ggplot(dat, aes(farming_type, d15N_permil)) +
   scale_shape_manual(values = shape_ft, name = "Farming type") +
   labs(x = NULL, y = expression(delta^15*N~("\u2030"))) +
   theme_minimal(base_size = 10) +
-  theme(panel.grid.major.x = element_blank(), panel.grid.minor = element_blank())
+  theme(
+    panel.grid.major.x = element_blank(),
+    panel.grid.minor   = element_blank(),
+    axis.line.x = element_line(color = "black", linewidth = 0.4),
+    axis.line.y = element_line(color = "black", linewidth = 0.4)
+  )
 
-fig <- p1 / p2
+fig <- (p1 / p2) + 
+  plot_layout(guides = "collect") &
+  theme(
+    legend.text  = element_text(size = 8),
+    legend.title = element_text(size = 9)
+  )
 ggsave("figures/Figure2_isotopes_by_farmingtype.tiff", fig,
        width = 84, height = 130, units = "mm",
        dpi = 600, device = "tiff", compression = "lzw", bg = "white")
