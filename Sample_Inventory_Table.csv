@@ -1,0 +1,11 @@
+ID,Supplier,Type of tomato,Producer,Region/Province,Country,Distributor,Organic,Conventional,Organic certifier,# of tomatoes
+A,Aldi,Bio-Cocktail-Rispentomaten,"Unknown, Franconia",Bavaria,Germany,Franken-Gemüse Bio eG,Yes,No,EU,4
+B,Aldi,Bio Dattelcherrytomaten,"Unknown, Almería",Almería,Spain,Biosol Portocarreo,Yes,No,EU,12
+C,Aldi,Dattel-Tomaten,"Familie Scherzer, Nuremberg, Franconia",Bavaria,Germany,Franken-Gemüse Knoblauchsland eG,No,Yes,NA,4
+D,Kaufland,Fränkische Naschtomaten,"Familie Scherzer, Nuremberg, Franconia",Bavaria,Germany,Scherzer Gemüse GmbH,No,Yes,NA,3
+E,Kaufland,Mini Roma Rispentomaten,"Familie Reichenspurner, Weidinger Hof, Polling",Bavaria,Germany,Reichenspurner GmbH,No,Yes,NA,4
+F,Kaufland,Cocktail Rispentomaten,"Familie Reichenspurner, Weidinger Hof, Polling",Bavaria,Germany,Reichenspurner GmbH,No,Yes,NA,4
+G,Ebl Naturkost,Small Bio-Tomaten,"Höfler GbR Bio-Gemüse, Nuremberg",Bavaria,Germany,Höfler GbR Bio-Gemüse,Yes,No,Demeter,4
+H,Ebl Naturkost,Big Bio-Tomaten,"Höfler GbR Bio-Gemüse, Nuremberg",Bavaria,Germany,Höfler GbR Bio-Gemüse,Yes,No,Demeter,4
+I,Ebl Naturkost,Bio-Datteltomaten,"Biohof Waas GmbH, Landau Zeholfing",Bavaria,Germany,Unknown,Yes,No,Bioland,4
+J,EDEKA,mini Pflaumen Tomaten,"Maraissa S.A, Agadir",Souss-Massa,Morocco,"Soc Distri Produit, Perpignan, France",No,Yes,NA,9
