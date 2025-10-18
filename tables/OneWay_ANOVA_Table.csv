@@ -1,0 +1,9 @@
+isotope,Source,df,Sum of squares,F,p-value
+δ¹³C,Farming type,1,18.64,13.14,<0.001 ***
+δ¹³C,Residual,50,70.94,–,–
+δ¹⁵N,Farming type,1,389.66,188.09,<0.001 ***
+δ¹⁵N,Residual,50,103.59,–,–
+δ¹³C,Region,2,17.55,5.97,0.005 *
+δ¹³C,Residual,49,72.03,–,–
+δ¹⁵N,Region,2,95.39,5.87,0.005 *
+δ¹⁵N,Residual,49,397.86,–,–
